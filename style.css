@@ -1,0 +1,72 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+/* Variables */
+/* :root {
+    --dark-blue: ;
+} */
+
+/* Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    background-color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+}
+
+.nav-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Header */
+header {
+    display: flex;
+}
