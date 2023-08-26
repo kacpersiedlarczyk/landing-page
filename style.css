@@ -7,6 +7,7 @@
 
     --fs-primary: 1.125rem;
     --fs-quote: 2.25rem;
+    --fs-quote-caption: 1.5rem;
     --fs-heading-one: 3rem;
     --fs-heading-two: 2.25rem;
     --fs-heading-three: 1.5rem;
@@ -48,8 +49,8 @@ img {
 
 /* General */
 body {
-    max-width: 1280px;
-    margin: auto;
+    /* max-width: 1280px;
+    margin: auto; */
     font-size: var(--fs-primary);
     font-family: var(--ff-primary);
     background-color: var(--clr-dark-blue);
@@ -89,6 +90,9 @@ button {
 
 /* Nav */
 nav {
+    max-width: 1280px;
+    margin: auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,8 +111,10 @@ nav {
 
 /* Header */
 .primary-header {
+    max-width: 1280px;
+    margin: auto;
+
     display: flex;
-    align-items: center;
     padding: 10rem 0;
 }
 
@@ -123,37 +129,64 @@ nav {
 
 /* Section 1 */
 .information {
-    background-color: antiquewhite;
-    padding: 10rem 0;
-}
-
-
-/* .info {
-    background-color: azure;
-    color: #E5E7EB;
-    background-color: #F9FAF8;
-    align-items: center;
-    text-align: center;
-    height: 700px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0;
+    background-color: var(--clr-white);
 }
 
+.information-container {
+    max-width: 1280px;
 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+}
 
+.information-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--clr-dark-blue);
+    flex-basis: 10.625rem;
+}
 
 .placeholder {
     width: 175px;
     height: 175px;
-    border: solid 4px #3882F6;
+    border: solid 4px var(--clr-light-blue);
     border-radius: 17px;
 }
 
-.info-con {
+/* Quote */
+.quote {
     display: flex;
-    flex-basis: 1px;
-    flex-grow: 0;
-    gap: 55px;
-} */
+    justify-content: center;
+    padding: 10rem 0;
+    background-color: var(--clr-light-gray);
+}
+
+.quote-container {
+    max-width: 80ch;
+    
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-dark-blue);
+}
+
+.quote-text {
+    font-size: var(--fs-quote);
+    font-weight: var(--fw-light);
+    font-style: italic;
+}
+
+.quote-caption {
+    align-self: flex-end;
+    font-size: var(--fs-quote-caption);
+}
+
+/* CTA */
