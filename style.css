@@ -49,11 +49,11 @@ img {
 
 /* General */
 body {
-    /* max-width: 1280px;
-    margin: auto; */
     font-size: var(--fs-primary);
     font-family: var(--ff-primary);
     background-color: var(--clr-dark-blue);
+
+    color: var(--clr-white);
 }
 
 h1 {
@@ -78,13 +78,13 @@ a {
 }
 
 button {
-    padding: 0.625rem 2.125rem;
+    padding: 0.5rem 2.125rem;
     color: var(--clr-white);
     font-size: var(--fs-primary);
     font-weight: var(--fw-bold);
     cursor: pointer;
     border: none;
-    border-radius: 8px;
+    border-radius: 9px;
     background-color: var(--clr-light-blue);
 }
 
@@ -190,3 +190,30 @@ nav {
 }
 
 /* CTA */
+.cta {
+    background-color: var(--clr-white);
+    padding: 8rem 0;
+}
+
+.cta-container {
+    max-width: 1280px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #3882f6;
+    padding: 4rem 9rem;
+}
+
+.btn-border {
+    border: solid 2.5px var(--clr-white);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
